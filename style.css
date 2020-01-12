@@ -1,0 +1,64 @@
+
+/* web */
+
+body {
+  margin: 40px auto;
+	max-width: 560px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1em;
+}
+
+.artwork h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.artwork p {
+  padding-bottom: 0.4em;
+}
+
+input {
+  z-index: 3;
+  opacity: 0;
+  width: 290px;
+  height: 290px;
+  bottom: 10px;
+  right: 10px;
+}
+
+label {
+  z-index: 2;
+  color: black;
+  bottom: 20px;
+  right: 20px;
+}
+
+input,
+label {
+  position: fixed;  
+}
+
+input:checked + div {
+  display: none;
+}
+
+.description {
+  position: fixed;  
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  padding: 10px 25px;
+  color: white;
+  text-align: right;
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px){
+
+  body {
+    margin: 20px;
+  }
+
+}
+
